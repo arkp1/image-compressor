@@ -11,7 +11,7 @@ def upload():
     file = request.files['image']
     img = Image.open(file)
     quality = int(request.form.get('quality', default=50))
-    img.load()  # Verify that the file is an image
+    img.load()
     
     output = io.BytesIO()
     img.save(output, format="JPEG", quality=quality) 
