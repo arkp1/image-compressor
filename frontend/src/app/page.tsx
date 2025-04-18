@@ -154,7 +154,7 @@ export default function Page() {
             disabled={!selectedFile}
             onClick={handleCompress}
           >
-            {isCompressing ? (<>Compressing<AiOutlineLoading3Quarters className="animate-spin inline-block ml-3 stroke-3" strokeWidth={5}/></>) : "Compress"}
+            {isCompressing ? (<>Compressing<AiOutlineLoading3Quarters className="animate-spin inline-block ml-3" strokeWidth={5}/></>) : "Compress"}
           </button>
           {downloadUrl && !isCompressing && (
             <div className="mt-4 text-center">
