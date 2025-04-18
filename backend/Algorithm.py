@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/upload": {"origins": "https://compressit-puce.vercel.app"}})
+CORS(app)
 
 
 @app.route('/upload', methods=['POST'])
