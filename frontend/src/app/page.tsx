@@ -3,6 +3,7 @@ import { Martian_Mono } from "next/font/google";
 import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
 import { PiDownloadSimpleBold } from "react-icons/pi";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const martianMono = Martian_Mono({
   subsets: ["latin"],
@@ -153,7 +154,7 @@ export default function Page() {
             disabled={!selectedFile}
             onClick={handleCompress}
           >
-            {isCompressing ? "Compressing..." : "Compress"}
+            {isCompressing ? (<>Compressing<AiOutlineLoading3Quarters className="animate-spin inline-block ml-3 stroke-3" strokeWidth={5}/></>) : "Compress"}
           </button>
           {downloadUrl && !isCompressing && (
             <div className="mt-4 text-center">
