@@ -45,7 +45,7 @@ export default function Page() {
     formData.append("image", selectedFile);
     formData.append("quality", quality.toString());
 
-    const res = await fetch("http://localhost:5000/upload", {
+    const res = await fetch("https://image-compressor-backend-0fvk.onrender.com/upload", {
       method: "POST",
       body: formData,
     });
