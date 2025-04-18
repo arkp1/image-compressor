@@ -159,9 +159,9 @@ export default function Page() {
             <div className="mt-4 text-center">
               <button
                 onClick={handleDownload}
-                className="flex items-center justify-center mx-auto gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
+                className="flex text-sm items-center justify-center mx-auto gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
               >
-               <PiDownloadSimpleBold className="text-xl" /> Download Compressed Image
+               <PiDownloadSimpleBold className="text-2xl" /> Download Compressed Image
               </button>
             </div>
           )}
