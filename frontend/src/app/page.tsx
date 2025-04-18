@@ -75,7 +75,7 @@ export default function Page() {
 
   return (
     <div
-      className={`min-h-screen py-8 px-4 bg-violet-600 ${martianMono.className}`}
+      className={`min-h-screen py-8 px-4 bg-violet-700 ${martianMono.className}`}
     >
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">
