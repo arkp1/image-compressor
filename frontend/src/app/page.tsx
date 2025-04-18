@@ -2,6 +2,7 @@
 import { Martian_Mono } from "next/font/google";
 import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
+import { PiDownloadSimpleBold } from "react-icons/pi";
 
 const martianMono = Martian_Mono({
   subsets: ["latin"],
@@ -139,8 +140,8 @@ export default function Page() {
           <Slider
             defaultValue={[quality]}
             max={100}
-            min={10}
-            step={10}
+            min={1}
+            step={1}
             className="w-50 h-2 mx-auto bg-lime-500 appearance-none rounded-full cursor-pointer"
             onValueChange={handleQuality}
           />
@@ -158,9 +159,9 @@ export default function Page() {
             <div className="mt-4 text-center">
               <button
                 onClick={handleDownload}
-                className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
+                className="flex items-center justify-center mx-auto gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
               >
-                Download Compressed Image
+               <PiDownloadSimpleBold className="text-xl" /> Download Compressed Image
               </button>
             </div>
           )}
