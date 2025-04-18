@@ -31,3 +31,32 @@ Click on the Upload button to select an image from your device.
 Use the slider to select the desired compression quality (0 to 100). The lower the quality, the smaller the file size.
 
 After the image is compressed, click the Download button to get the optimized file.
+
+Running Locally
+Prerequisites
+- Python 3.7+
+
+- Node.js 14+
+
+Setup Frontend:
+
+Clone the repository:
+git clone https://github.com/arkp1/image-compressor.git
+cd image-compressor/frontend
+
+Install dependencies:
+npm install
+
+Run the development server:
+npm run dev
+
+Setup Backend:
+
+Navigate to the backend folder:
+cd backend
+
+Install Python dependencies:
+pip install -r requirements.txt
+
+Run the Flask server:
+python app.py
