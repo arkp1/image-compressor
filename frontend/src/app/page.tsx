@@ -76,7 +76,7 @@ export default function Page() {
 
   return (
     <div
-      className={`min-h-screen py-8 px-4 bg-orange-500 md:bg-gradient-to-b from-orange-500 to-orange-700 ${martianMono.className}`}
+      className={`min-h-screen py-8 px-4 bg-gradient-to-b from-orange-400 to-orange-600 md:bg-gradient-to-b from-orange-400 to-orange-600 ${martianMono.className}`}
     >
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">
