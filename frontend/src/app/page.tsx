@@ -76,7 +76,7 @@ export default function Page() {
 
   return (
     <div
-      className={`min-h-screen py-8 px-4 bg-gradient-to-b from-orange-400 to-orange-600 md:bg-gradient-to-b from-orange-400 to-orange-600 ${martianMono.className}`}
+      className={`min-h-screen py-8 px-4 bg-gradient-to-b from-orange-400 to-orange-500 md:bg-gradient-to-b from-orange-400 to-orange-600 ${martianMono.className}`}
     >
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">
@@ -150,7 +150,7 @@ export default function Page() {
 
         <div className="mt-6 text-center">
           <button
-            className="bg-yellow-600 text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-colors disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+            className="bg-yellow-500 text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-colors disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
             disabled={!selectedFile}
             onClick={handleCompress}
           >
