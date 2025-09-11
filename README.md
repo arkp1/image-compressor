@@ -5,9 +5,7 @@ A simple, lightweight web app to compress images fast & easy. Drag & drop your i
 ## Features
 - Drag & drop support
 - Supports JPG, PNG, and WebP
-- Fast client-side compression
-- Preview before download
-- No backend needed (runs fully in browser)
+- Fast compression
 
 ## Tech Stack
 - Next.js
