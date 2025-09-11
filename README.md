@@ -13,7 +13,7 @@ A simple, lightweight web app to compress images fast & easy. Drag & drop your i
 - Tailwind CSS
 
 ## How To Use
-1. Open the [https://compressit-puce.vercel.app/](website).
+1. Open the [website](https://compressit-puce.vercel.app/).
 2. Drag or select an image.
 3. Click on "Compress".
 4. Download the compressed image.
