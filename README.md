@@ -1,4 +1,4 @@
-# Image Compressor Web App
+# Compressor it Web App
 
 A simple, lightweight web app to compress images fast & easy. Drag & drop your images, compress them, and download the optimized versions without losing much quality.
 
