@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Slider } from "@/components/ui/slider";
 import { PiDownloadSimpleBold } from "react-icons/pi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import Footer from "../../Components/Footer";
 
 const martianMono = Martian_Mono({
   subsets: ["latin"],
@@ -76,7 +77,7 @@ export default function Page() {
 
   return (
     <div
-      className={`min-h-screen py-8 px-4 bg-gradient-to-b from-orange-400 to-orange-500 md:bg-gradient-to-b from-orange-400 to-orange-600 ${martianMono.className}`}
+      className={`min-h-screen py-8 px-4 bg-[#6FA4AF] ${martianMono.className}`}
     >
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">
@@ -96,7 +97,7 @@ export default function Page() {
           className={`border-4 border-dashed rounded-lg p-12 text-center transition-colors ${
             isDragging
               ? "border-blue-500 bg-blue-50"
-              : "border-gray-300 hover:border-gray-400"
+              : "border-gray-700 hover:border-gray-500"
           }`}
           onDragOver={handleDragOver}
           onDrop={handleDrop}
@@ -112,7 +113,7 @@ export default function Page() {
           <label htmlFor="fileInput" className="cursor-pointer">
             <div className="space-y-4">
               <svg
-                className="mx-auto h-12 w-12 text-gray-400"
+                className="mx-auto h-12 w-12 text-black"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 48 48"
@@ -125,7 +126,7 @@ export default function Page() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <div className="text-gray-600">
+              <div className="text-gray-800">
                 {selectedFile
                   ? selectedFile.name
                   : "Drag and drop your image here"}
@@ -138,6 +139,7 @@ export default function Page() {
           <label htmlFor="quality-slider" className="block text-gray-800 p-3">
             Quality: {quality}%
           </label>
+          <p className="mb-5 text-xs">Lesser the %, lesser the file size.</p>
           <Slider
             defaultValue={[quality]}
             max={100}
@@ -150,7 +152,7 @@ export default function Page() {
 
         <div className="mt-6 text-center">
           <button
-            className="bg-yellow-500 text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition-colors disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+            className="bg-yellow-500 text-white px-8 py-3 rounded-lg hover:opacity-90 transition-colors disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
             disabled={!selectedFile}
             onClick={handleCompress}
           >
@@ -160,7 +162,7 @@ export default function Page() {
             <div className="mt-4 text-center">
               <button
                 onClick={handleDownload}
-                className="flex text-sm items-center justify-center mx-auto gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors cursor-pointer"
+                className="flex text-sm items-center justify-center mx-auto gap-2 bg-[#55AD9B] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-colors cursor-pointer"
               >
                <PiDownloadSimpleBold className="text-2xl" /> Download Compressed Image
               </button>
@@ -168,6 +170,7 @@ export default function Page() {
           )}
         </div>
       </div>
+        <Footer />
     </div>
   );
 }
