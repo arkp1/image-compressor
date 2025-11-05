@@ -11,6 +11,7 @@ A simple, lightweight web app to compress images fast & easy. Drag & drop your i
 - Next.js
 - Python
 - Tailwind CSS
+- Hosted on Render & Vercel
 
 ## How To Use
 1. Open the [website](https://compressit-puce.vercel.app/).
