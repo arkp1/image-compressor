@@ -19,4 +19,6 @@ A simple, lightweight web app to compress images fast & easy. Drag & drop your i
 3. Click on "Compress".
 4. Download the compressed image.
 
+![Screenshot](Screenshot.png)
+
 
